@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A meta store for laptops is a centralized digital platform that aggregates product information, reviews, pricing, and availability from multiple retailers and brands. Instead of selling laptops directly, it acts as a comparison hub, helping users find the best deals, specifications, and user feedback across various e-commerce sites.">
+        <meta name="keywords" content="laptop, computer, harddrive, acsessories, electronics, meta store, online shopping, product comparison, reviews, pricing, availability">
+        <meta name="author" content="Meta Store Team">  
+        <meta http-equiv="Refresh" content="300">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+        <title>Make an Order - Meta Store</title>
+
+        <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Meta Store</h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./make_order.html">Make an Order</a></li>
+          <li><a href="./contact_us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Order Form</legend>
+              <fieldset>
+                <legend>Personal Information</legend>
+                <table>
+                  <tr>
+                    <td><label for="fullname">Full Name:</label></td>
+                    <td><input type="text" id="fullname" name="fullname" required /></td>
+                  </tr>
+                  <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required placeholder="XXXXX@domain.com" /></td>
+                  </tr>
+                  <tr>
+                    <td><label for="phone">Phone:</label></td>
+                    <td><input type="tel" id="phone" name="phone" placeholder="01xxxxxxxxxxx" /></td>
+                  </tr>
+                  <tr>
+                    <td><label for="governorate">Governorate:</label></td>
+                    <td>
+                        <select name="governorate" id="governorate">
+                          <option value="">--Select--</option>
+                          <option value="Cairo">Cairo</option>
+                          <option value="Fayoum">Fayoum</option>
+                          <option value="Giza">Giza</option>
+                        </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"><label for="address">Shipping Address:</label></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"><textarea id="address" name="address" rows="4" cols="50" required placeholder="enter your address"></textarea></td>
+                  </tr>
+                </table>
+              </fieldset>
+              <fieldset>
+                <legend>Order Details</legend>
+                <table>
+                  <tr>
+                        <td><label for="product">Select Product:</label></td>
+                        <td>
+                          <select id="product" name="product" required>
+                            <option value="">--Select--</option>
+                            <option value="asus_tuf">ASUS TUF A15 2024</option>
+                            <option value="hp_victus">HP Victus 15</option>
+                            <option value="dell_g15">DELL G15 5530</option>
+                            <option value="hp_omen">HP OMEN 16</option>
+                            <option value="lenovo_legion">Lenovo Legion Pro 5</option>
+                            <option value="lenovo_yoga">Lenovo LOQ 15IRX9</option>
+                          </select>
+                        </td>
+                  </tr>
+                  <tr>
+                      <td><label for="quantity">Quantity:</label></td>
+                      <td><input type="number" id="quantity" name="quantity" min="1" value="1" required /></td>
+                  </tr>
+                  <tr>
+                      <td colspan="2"><label for="comments">Comments or Requests:</label></td>
+                  </tr>
+                  <tr>
+                      <td colspan="2"><textarea id="comments" name="comments" rows="4" cols="50" placeholder="enter your comments or issues"></textarea></td>
+                  </tr>
+                </table>
+              </fieldset>
+          </fieldset>
+          <br>
+          <button type="submit">Submit Order</button>
+        </form>
+      </section>
+    </main>
+
+    <aside>
+      <h2>Meta Store</h2>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./make_order.html">Make an Order</a></li>
+          <li><a href="./contact_us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <footer>
+      <p>Follow us on:
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+      </p>
+      <p>Contact us at: <a href="./contact_us.html">Contact Us</a></p>
+      <p>&copy; 2025 Meta Store. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+  </html>

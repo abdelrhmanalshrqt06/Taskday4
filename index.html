@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="A meta store for laptops is a centralized digital platform that aggregates product information, reviews, pricing, and availability from multiple retailers and brands. Instead of selling laptops directly, it acts as a comparison hub, helping users find the best deals, specifications, and user feedback across various e-commerce sites.">
+      <meta name="keywords" content="laptop, computer, harddrive, acsessories, electronics, meta store, online shopping, product comparison, reviews, pricing, availability">
+      <meta name="author" content="Meta Store Team">  
+      <meta http-equiv="Refresh" content="300">
+      <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+      <title>meta store</title>
+
+      <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+
+      <header>
+        <h1>Meta Store</h1>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./make_order.html">Make an Order</a></li>
+            <li><a href="./contact_us.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <blockquote cite="https://www.azquotes.com/quote/259981?ref=electronic-devices">
+          <b>"Working in an office with an array of electronic devices is like trying to get something done at home with half a dozen small children around. The calls for attention are constant."
+          </b>
+          <i>Marilyn vos Savant</i>
+        </blockquote>
+      </header>
+
+      <main>
+        <form>
+            <label for="search"> <strong>Search Product:</strong></label>
+            <input list="search" id="search" name="search">
+            <datalist id="search">
+                <option value="Laptop">Laptop hp</option>
+                <option value="Phone">Computer hp</option>
+                <option value="TV">Laptop Lenovo</option>
+                <option value="Laptop">Laptop dell</option>
+                <option value="Phone">Computer dell</option>
+                <option value="TV">Laptop ASUS</option>
+            </datalist>
+            <label for="cat"> <strong>Category:</strong></label>
+            <select name="cat" id="cat">
+                <option value="all">All</option>
+                <option value="Elect">Elect</option>
+                <option value="Acces">Acces</option>
+            </select>
+            <button type="submit">Filter</button>
+        </form>
+
+        <br>
+
+        <table border="1" cellspacing="0" cellpadding="5">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Size</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="./images/ASUS.jpg" alt="Laptop" width="100"></td>
+                    <td>ASUS TUF A15 2024</td>
+                    <td>High performance laptop</td>
+                    <td>
+                        <input type="radio" id="1" name="size" value="512">
+                        <label for="1">512GB</label>
+                        <br>
+                        <input type="radio" id="2" name="size" value="1024">
+                        <label for="2">1024GB</label>
+                    </td>
+                    <td> <mark><b>$1000</b></mark> <sup><del>$1500</del></sup> </td>
+                    <td><button>Add to cart</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./images/hp_victus.jpg" alt="Laptop" width="100"></td>
+                    <td>HP Victus 15</td>
+                    <td>Hp Victus 15-fa1017nia Gaming Laptop- 13th Intel i5-13500H 12-Cores, 6GB GDDR6 NVIDIA GeForce RTX 4050 Graphics</td>
+                    <td>
+                        <input type="radio" id="3" name="size" value="512">
+                        <label for="3">512GB</label>
+                        <br>
+                        <input type="radio" id="4" name="size" value="1024">
+                        <label for="4">1024GB</label>
+                    </td>
+                    <td> <mark><b>$900</b></mark> <sup><del>$1250</del></sup> </td>
+                    <td><button>Add to cart</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./images/dell_g15.jpg" alt="Laptop" width="100"></td>
+                    <td>DELL G15 5530</td>
+                    <td>DELL G15 5530 Gaming Laptop - 13th Intel Core i7-13650HX 14 Cores, NVIDIA GeForce RTX 4060 8GB GDDR6 Graphics, 16GB</td>
+                    <td>
+                        <input type="radio" id="5" name="size" value="512">
+                        <label for="5">512GB</label>
+                        <br>
+                        <input type="radio" id="6" name="size" value="1024">
+                        <label for="6">1024GB</label>
+                    </td>
+                    <td> <mark><b>$1200</b></mark> <sup><del>$1700</del></sup> </td>
+                    <td><button>Add to cart</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./images/hp_omen.jpg" alt="Laptop" width="100"></td>
+                    <td>HP OMEN 16</td>
+                    <td>HP OMEN 16-k0033dx Gaming Laptop - 12th Intel Core i9-12900H, 16GB DDR5 RAM, 1TB SSD, 16.1" QHD (2560x1440)</td>
+                    <td>
+                        <input type="radio" id="7" name="size" value="512">
+                        <label for="7">512GB</label>
+                        <br>
+                        <input type="radio" id="8" name="size" value="1024">
+                        <label for="8">1024GB</label>
+                    </td>
+                    <td> <mark><b>$1900</b></mark> <sup><del>$2000</del></sup> </td>
+                    <td><button>Add to cart</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./images/lenovo_legion.jpg" alt="Laptop" width="100"></td>
+                    <td>Lenovo Legion Pro 5</td>
+                    <td>Lenovo Legion Pro 5-13th i7-13700HX-16Cores, 32GB DDR5, 1TB SSD, NVIDIA GeForce RTX 4060 8GB GDDR6 Graphics, 16"</td>
+                    <td>
+                        <input type="radio" id="9" name="size" value="512">
+                        <label for="9">512GB</label>
+                        <br>
+                        <input type="radio" id="10" name="size" value="1024">
+                        <label for="10">1024GB</label>
+                    </td>
+                    <td> <mark><b>$1000</b></mark> <sup><del>$1500</del></sup> </td>
+                    <td><button>Add to cart</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./images/lenovo_yoga.jpg" alt="Laptop" width="100"></td>
+                    <td>Lenovo LOQ 15IRX9</td>
+                    <td>Lenovo LOQ 15IAX9 Gaming Laptop- Intel Core i5-12450HX, AI Chip: LA1, 4GB GDDR6 NVIDIA GeForce RTX2050, 8GB DDR5</td>
+                    <td>
+                        <input type="radio" id="11" name="size" value="512">
+                        <label for="11">512GB</label>
+                        <br>
+                        <input type="radio" id="12" name="size" value="1024">
+                        <label for="12">1024GB</label>
+                    </td>
+                    <td> <mark><b>$1000</b></mark> <sup><del>$1500</del></sup> </td>
+                    <td><button>Add to cart</button></td>
+                </tr>
+            </tbody>
+        </table>
+        </section>
+      </main>
+
+      <aside>
+        <h2>Meta Store</h2>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./make_order.html">Make an Order</a></li>
+            <li><a href="./contact_us.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <footer>
+        <p>Follow us on:
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        <p>Contact us at: <a href="./contact_us.html">Contact Us</a></p>
+        <p>&copy; 2025 Meta Store. All rights reserved.</p>
+      </footer>
+      
+      <script src="./js/script.js"></script>
+      
+    </body>
+  </html>
